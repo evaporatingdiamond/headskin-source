@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "headskins",
+  "version": "${version}",
+  "name": "ArmorPoser Head Skins",
+  "description": "Client + Server companion mod for Armor Poser that universally hides the wooden frame and renders full 3D player skins and mob models (Zombie, Skeleton, Wither Skeleton, Piglin, Creeper) on Armor Stands.",
+  "authors": [
+    "Dibya"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dibya.headskins.HeadSkinsMod"
+    ],
+    "client": [
+      "com.dibya.headskins.client.HeadSkinsClient"
+    ]
+  },
+  "mixins": [
+    "headskins.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "armorposer": "*"
+  }
+}
